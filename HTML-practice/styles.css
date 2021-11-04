@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Montserrat:wght@100&family=Mulish:wght@300&display=swap");
+  font-family: "Comfortaa", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+}
+.white-space {
+  padding: 25px;
+  margin: 15px;
+}
+.container-fields {
+  background-color: lavender;
+  width: max-content;
+  margin: 25px;
+  padding: 25px 35px;
+  border: rgb(79, 68, 103) 2px solid;
+}
+
+.name {
+  margin: 25px;
+  padding: 25px 35px;
+  background-color: #95b8d1;
+  border: 2px solid grey;
+  width: fit-content;
+}
+
+.container {
+  width: max-content;
+  height: 320px;
+  margin: 25px;
+  padding: 25px 35px;
+  background-color: #d6eadf;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(149, 174, 149);
+}
+fieldset {
+  width: 520px;
+  height: 320px;
+}
