@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@200;400&display=swap");
 
 body {
-  background-color: #c8eff9;
+  /* background-color: #c8eff9; */
   font-family: "Spartan", sans-serif;
 }
 .container {
@@ -19,4 +19,20 @@ body {
 }
 ul li {
   padding: 5px;
+}
+.container-syntax {
+  background-color: #eedbdb;
+  width: 680px;
+  border: 2px solid grey;
+  color: rgb(89, 87, 87);
+  padding: 25px;
+  margin: 15px;
+  line-height: 25px;
+}
+.sub {
+  padding: 25px;
+}
+.code {
+  padding: 15px;
+  margin: 10px;
 }
