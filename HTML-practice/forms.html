@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Opdracht 3 -->
+    <div>
+      <h2 class="White-space">HTML Form</h2>
+      <form class="name">
+        <label for="Achternaam">Achternaam:</label><br />
+        <input
+          type="text"id="Achternaam"name="Achternaam"value="Achternaam"
+        /><br /><br />
+        <label for="Voornaam:">Voornaam:</label><br />
+        <input type="text" id="Voornaam:" name="voornaam:" value="Voornaam" />
+      </form>
+    </div>
+    <div>
+      <br/>
+      <br/>
+      <!-- Opdracht 4 -->
+      <h2 class="White-space">Input Fields</h2> <br/>
+      <form class="container-fields">
+        <p>Contact Method:</p>
+        <div>
+          <input type="radio" id="email"
+           name="contact" value="email">
+           </div>
+       </form>    
+       <form  class="container-fields">
+           <div>
+             <p>Monsters fetures</p>
+            <input type="checkbox" id="scales" name="scales"
+                   checked>
+            <label for="scales">Scales</label>
+          </div>
+          <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+      </form>
+       
+       <form class="container-fields" >
+        <div>
+            <label for="pass">Password (5 characters minimum):</label>
+            <input type="password" id="pass" name="password"
+                   minlength="8" required>
+        </div>
+          
+      </form>
+    <br/>
+  <br/>
+      </div>
+  
+           
+      
+ <!-- Opdracht 5 -->
+</div>
+    </div>
+    <div class="container">
+      <fieldset>
+        <legend>Persoons Gegevens</legend>
+        <form action=""> <br/>
+          <label for="firstname">Voornaam</label><input type="text" />
+          <br /><br />
+          <label for="lastname">Achternaam</label><input type="text" /><br /><br />
+          <label for="birthday">Geboortedatum</label
+          ><input type="date" /><br /><br />
+          <label for="gender">M</label><input type="radio" /><br /><br />
+          <label for="gender">V</label><input type="radio" /><br /><br />
+          <label for="zipcode">Postcode:</label>
+          <input type="text" /><br /><br />
+          <label for="address">Adres:</label> <input type="text" /><br /><br />
+          <input type="submit" value="submit" />
+          <input type="reset" value="reset" />
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>
