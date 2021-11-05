@@ -5,16 +5,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Opdracht 3</title>
+    <link rel="stylesheet" href="CSS-main.css" />
   </head>
   <body>
-    <main>
+    <main class="selectors">
       <h2>Opdracht 3</h2>
-      <p>Er zijn verschillende selectors, bijvoorbeeld;</p>
-      <ol>
-        <li>type selectors</li>
-        <li>descendant selectors</li>
-        <li>class selectors</li>
+      <p class="verschillende">
+        Er zijn verschillende selectors, bijvoorbeeld;
+      </p>
+      <ol class="list">
+        <li><a href="#selector-index-a"> Type selectors</a></li>
+        <li><a href="#selector-index-b">Descendant selectors</a></li>
+        <li><a href="#selector-index-c">Class selectors</a></li>
       </ol>
+      <div>
+        <section class="selectors">
+          <h3 id="selector-index-a">Type selectors</h3>
+          <br>
+          <p> The CSS type selector matches elements by node name. In other words, it selects all elements of the given type within a document.</p>
+              
+
+          <code> /* All <a> elements. */
+            a {
+              color: red;
+            }
+        
+        </code>
+        <br>
+        <p>
+            Type selectors can be namespaced when using @namespace. This is useful when dealing with documents containing multiple namespaces such as HTML5 with inline SVG or MathML, or XML that mixes multiple vocabularies.</p>
+            <br>
+            <code class="code">
+            |h1 - matches &#60;h1&#62; elements in namespace ns 
+            <br>
+            *|h1 - matches all &#60;h1&#62; elements
+            <br>
+            |h1 - matches all &#60;h1 &#62; elements without any declared namespace
+            Syntax
+            </code>
+        </section>
+
+        <!-- Descendant selectors -->
+        
+        <section class="selectors">
+            <h3 id="selector-index-b">Descendant selectors</h3>
+           <br>
+            <p>Descendant selectors
+            another element in the document tree.
+            <br>
+            <p>
+            For example, you may wish to target a specific &#60;<em>&#62; element on the page, but not all &#60;<em>&#62; elements. A sample document could contain the following code:&#60;/em&#62;
+            </p>
+           
+            <div class="container-selector">
+            <code>
+            &#60;body&#62; <br>
+            &#60;h1&#62;Heading &#60;em&#62;here&#60;/em&#62; &#60;/h1&#62; <br>
+            &#60;p &#62;Lorem ipsum dolor &#60;em&#62;sit&#60;/em&#62; &#60;amet&#62;
+            
+            <br> &#60;p&#62; <br>
+            &#60;/body&#62;
+            </code>
+            </div>
+            <br>
+        
+            
+        <p> The document tree diagram (with the <em> element to be targeted) would be:
+
+            Document tree showing descendant selectors
+
+            If you use a type selector like the example below, you will select all  elements on the page:
+        </p>
+        <code>
+            em {color: blue; }
+
+        </code>
+
+          <p>
+               However, if you use a descendant selector, you can refine the &#60;em&#62; elements that you select. The rule below will only select &#60;em&#62; elements that are descendants of &#60;p&#62; elements. </p> 
+            <code>   
+
+            p em {color: blue; }
+        </code> 
+        <br>
+        <br>
+        <p>
+            You can also jump levels in the document tree structure to select descendants. For example, the following code:
+        </p>
+        <br>
+        <code>
+
+            &#60;body&#62;<br>
+                &#60;p&#62;Lorem ipsum dolor &#60;em&#62;sit&#60;/em&#62; amet.&#60;/p&#62;
+                &#60;ul&#62;<br>
+                    &#60;li&#62;item 1&#60;&#60;/li&#62; <br>
+                    &#60;li&#62;item 2&#60;&#62;/li&#62; <br>
+                    &#60;li&#60;&#60;em&#62;item 3&#60;/em&#62;&#60;/li&#62;<br>
+                    &#60;ul&#62; <br>
+                    &#60;/body&#62; <br>
+        </code>
+        <br>
+        <p>
+            The  &#60;em&#62; element would be:
+
+            Document tree showing descendant selectors
+        </p>
+        <p>   
+        Using the following rule you can isolate any &#60;em&#62; element inside a &#60;ul&#62; element, without having to describe the &#60;li&#62; element.
+        <br>
+        If this rule is applied, any &#60;em&#60; element within a &#60;ul&#62; element will be selected.
+        <br>
+        However, the&#60;em&#62; element within the &#60;p&#62; will not be targeted:
+        </p>     
+        <br>
+           <code>  
+               ul em {color: blue; }
+        </code>   
+        <br>
+        <br>
+           <p>Descendant selectors are well supported across standards-compliant browsers.</p> 
+      </section>
+      </div>
+      <section>
+          <h3 id="selector-index-c">Class selectors </h3>
+          <br>
+          <p>The .class selector is used to select all elements which belong to a particular class attribute. In order to select the elements with a particular class, use the period (.) character specifying the class name ie., it will match the HTML element based on the contents of their class attribute. The class name is mostly used to set the CSS property to a given class.
+        </p>
+        <br>
+        <br>
+        <code>
+            .class {
+                //CSS Property
+            }
+         </code>
+    </section>
+
+
     </main>
-  </body>
+    </body>
 </html>

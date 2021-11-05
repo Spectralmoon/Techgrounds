@@ -20,6 +20,7 @@ body {
 ul li {
   padding: 5px;
 }
+
 .container-syntax {
   background-color: #eedbdb;
   width: 680px;
@@ -35,4 +36,20 @@ ul li {
 .code {
   padding: 15px;
   margin: 10px;
+}
+/* OPdracht 3 */
+.list {
+  padding-left: 45px;
+}
+.selectors {
+  background-color: #c8e3d4;
+  color: #22577a;
+  margin: 15px 5px;
+  padding: 25px;
+}
+.verschillende {
+  padding: 25px;
+}
+.code {
+  font-weight: 800;
 }
