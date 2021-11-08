@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+     body {
+         background-color:C8B4BA;
+         color: #909090;
+     }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h3>Type Selector</h3>
+      <p>Matches elements by node name</p>
+      <code> a { } </code>
+    </section>
+
+    <section>
+      <h3>ID Selector</h3>
+      <p>id attribute of an HTML element to select a specific element.</p>
+      <code> # a { } </code>
+    </section>
+
+    <section>
+      <h3>Child Selector</h3>
+      <p>Used to match all the elements which are child of a specified element</p>
+      <code> a&#62 b { } </code>
+    </section>
+
+    <section>
+      <h3>Descendant Selector</h3>
+      <p>Made up of two or more selectors separated by white space</p>
+      <code>
+          a b {}
+      </code>
+    </section>
+
+    <section>
+      <h3> Combine Descendant & ID</h3>
+      <p></p>
+      <code>
+          # a b {}
+      </code>
+    </section>
+    <section>
+      <h3>Comma combinator</h3>
+      <p>Separates multiple selectors within the same styles.</p>
+      <code>
+          a, c {}
+      </code>
+    </section>
+
+    <section>
+      <h3>Universal</h3>
+      <p>When you wish to put a specific style in all the HTML elements within your web page. </p>
+      <code>
+          *{}
+      </code>
+    </section>
+
+    <section>
+      <h3>Combine Universal</h3>
+      <p>Combining the Universal selector with another element</p>
+      <code>
+          a * {}
+      </code>
+    </section>
+
+    <section>
+      <h3>Adjacent Sibiling</h3>
+      <p>Separates two selectors and matches the second element only if it immediately follows the first element</p>
+      <code>
+          a + b{ }
+      </code>
+    </section>
+
+    <section>
+      <h3>General Sibiling</h3>
+      <p>The CSS general sibling selector is used to select all elements that follow the first element such that both are children of the same parent.</p>
+      <code>
+          a+b { }
+      </code>
+    </section>
+
+    <section>
+      <h3>First Child Pseudo</h3>
+      <p>Represents the first element among a group of sibling elements.</p>
+      <code>
+          b: first-child{ }
+      </code>
+    </section>
+
+    <section>
+      <h3>Only Child Pseudo</h3>
+      <p>An element that has a parent element and whose parent element has no other element children.</p>
+      <code>
+          a:only-child {}
+
+      </code>
+    </section>
+
+    <section>
+      <h3>Last Child Pseudo</h3>
+      <p>An element that has a parent element and whose parent element has no other element children.</p>
+      <code>
+          b:last-child { }
+      </code>
+    </section>
+
+    
+  </body>
+</html>
