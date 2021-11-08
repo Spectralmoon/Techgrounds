@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht9</title>
+    <style>
+      body {
+        background-color: rgb(201, 183, 196);
+      }
+
+      .box {
+        height: 150px;
+        width: 150px;
+        border: 4px solid rgb(193, 50, 50);
+        background-color: salmon;
+      }
+      .container {
+        display: flex;
+        justify-content: left;
+      }
+      .box-one {
+        padding: 0 15px 0 25px;
+      }
+      .box-two {
+        margin: 15px;
+      }
+      .box-three {
+        border: 15px red solid;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section>
+        <div class="box-one">
+          <p class="box">BOX 1</p>
+          <p>
+            Box-1 and Box-2 have padding
+            <br />
+            right of 15 px all around
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="box-two">
+          <p class="box">BOX 2</p>
+          <p>
+            box-2 and box-3 have a <br />
+            margin of 15px
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="box-three">
+          <p class="box">BOX 3</p>
+          <p>
+            box-3 has a border red color <br />
+            25px thick solid
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
