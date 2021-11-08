@@ -8,6 +8,7 @@
 body {
   /* background-color: #c8eff9; */
   font-family: "Spartan", sans-serif;
+  background-color: #c8e3d4;
 }
 .container {
   background-color: #55bdca;
@@ -52,4 +53,31 @@ ul li {
 }
 .code {
   font-weight: 800;
+}
+
+/* opdracht 8 */
+.title-cascades {
+
+  padding 45px; 
+  border: 2px solid black;
+  margin: auto;
+  text-align: center;
+  font-size:35px ;
+}
+.inheritance {
+  width: fit-content;
+  height: max-content;
+  background-color: #b8c8b3;
+  padding: 35px;
+  text-align: center;
+  margin: auto;
+}
+.cascading{
+  width: fit-content;
+  height: max-content;
+  background-color: #b8c8b3;;
+  padding: 35px;
+  text-align: center;
+  margin: 35px 25px;
+  
 }
