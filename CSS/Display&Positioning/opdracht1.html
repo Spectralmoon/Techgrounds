@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opdracht 1</title>
+  </head>
+  <body>
+    <main>
+      <h1>
+        Welke position values zijn er? Leg voor elke position values uit wat het
+        doet. Geef ook aan welke default position waarde elementen hebben die je
+        gebruikt in html.
+      </h1>
+      <h3>The dafault position is the Static Position</h3>
+      <section>
+        <h2>Position Static</h2>
+        <p>
+          Every element has a static position by default, so the element will
+          stick to the normal page flow. So if there is a
+          left/right/top/bottom/z-index set then there will be no effect on that
+          element.
+        </p>
+        <code>
+          div.static { position: static; border: 3px solid #73AD21; }
+        </code>
+      </section>
+      <section>
+        <h2>Position Relative</h2>
+        <p>
+          An element’s original position remains in the flow of the document,
+          just like the static value. But now left/right/top/bottom/z-index will
+          work. The positional properties “nudge” the element from the original
+          position in that direction.
+        </p>
+        <code> .element { position: relative; top: 20px; } </code>
+      </section>
+
+      <section>
+        <h2>PositionFixed</h2>
+        <p>
+          The element is removed from the flow of the document like absolutely
+          positioned elements. In fact they behave almost the same, only fixed
+          positioned elements are always relative to the document, not any
+          particular parent, and are unaffected by scrolling.
+        </p>
+        <code>
+          .parent { <br />
+          position: relative;} <br />
+          .element{ <br />
+          position:fixed; }
+        </code>
+      </section>
+
+      <section>
+        <h2>Position Absolute</h2>
+        <p>
+          The element is removed from the flow of the document and other
+          elements will behave as if it’s not even there whilst all the other
+          positional properties will work on it.
+        </p>
+        <code>
+          .element { <br />
+          position: absolute; }
+        </code>
+      </section>
+
+      <section>
+        <h2>Position Sticky</h2>
+        <p>
+          The sticky value is like a compromise between the relative and fixed
+          values. It allows you to position an element relative to anything on
+          the document and then, once a user has scrolled past a certain point
+          in the viewport, fix the position of the element to that location so
+          it remains persistently displayed like an element with a fixed value.
+        </p>
+        <code> .element { position: sticky; top: 50px; </code>
+      </section>
+    </main>
+  </body>
+</html>
