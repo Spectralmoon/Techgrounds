@@ -6,25 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Opdracht 4</title>
     <style>
-      .btn {
-        font-family: arial;
-        text-transform: uppercase;
-        font-size: 240px;
-        width: 240px;
-        height: 60px;
-        border-radius: 80px;
-        line-height: 60px;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      button {
+        width: 400px;
+        height: 100px;
         text-align: center;
-        border: 3px solid rgb(77, 140, 138);
-        display: block;
-        text-decoration: none;
-        margin: 300px auto;
+        background-color: rgb(102, 216, 209);
         color: white;
-        position: ;
+        display: block;
+        position: relative;
+        /* margin: 50px; */
+      }
+      button::before {
+        content: "";
+        height: 50px;
+        width: 10px;
+        background-color: orange;
+        top: 0;
+        left: 0;
+        display: block;
+        position: absolute;
+      }
+      button::after {
+        content: "";
+        height: 10px;
+        width: 50px;
+        background-color: orange;
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+      div {
+        width: 400px;
+        height: 100px;
+        text-align: center;
+        background-color: rgb(102, 216, 209);
+        color: white;
+        display: block;
+        position: relative;
+      }
+      div::before {
+        content: "";
+        height: 30px;
+        width: 10px;
+        background-color: orange;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+      }
+      div::after {
+        content: "";
+        height: 50px;
+        width: 10px;
+        background-color: orange;
+        bottom: 0;
+        right: 0;
+        position: absolute;
       }
     </style>
   </head>
   <body>
-    <div></div>
+    <div>
+      <button>Button</button>
+    </div>
   </body>
 </html>
