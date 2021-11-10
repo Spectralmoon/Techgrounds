@@ -27,23 +27,6 @@
           The :checked pseudo-class targets radio buttons, checkboxes and option
           elements that have been checked or selected.
         </p>
-        <p>when a checkbox is checked, and you are targeting the label immediately after it:</p>
-            
-            <code>
-            input[type=checkbox] + label {
-            color: #ccc;
-            font-style: italic;
-          } 
-          input[type=checkbox]:checked + label {
-            color: #f00;
-            font-style: normal;
-          } 
-        </code>
-          The label text will turn from grey italic to red normal font.
-          <code>
-            &#60;input type="checkbox" id="ossm" name="ossm"&#62;
-            &#60;label for="ossm"&#62;CSS is Awesome &#60;label &#62;
-        </code>
       </div>
       <div>
         <h2>: hover</h2>
@@ -52,16 +35,6 @@
           pointer is above it. It doesn’t have to be restricted to links,
           although that is the most common use case.
         </p>
-        <code>
-
-        a {
-            color: green;
-          }
-          
-          a:hover {
-            color: yellow;
-          }
-        </code>
       </div>
       <div>
         <h2>: invalid</h2>
