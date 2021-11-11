@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.flex-container {
+  /* background: whitesmoke; */
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  flex-direction: row;
+  padding: 25px;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 0 auto;
+}
+div {
+  display: block;
+  padding: 5rem;
+  border-radius: 5%;
+  font-weight: 900;
+}
+.flex-box-one {
+  background: wheat;
+}
+.flex-box-two {
+  background: rgb(132, 174, 213);
+}
+.flex-box-three {
+  background: rgb(199, 244, 221);
+}
+.flex-box-four {
+  background: whitesmoke;
+}
+.flex-box-five {
+  background: #000;
+  color: white;
+}
+.flex-box-six {
+  background-image: linear-gradient(
+    to left,
+    rgb(218, 218, 220),
+    rgb(22, 73, 203)
+  );
+}
