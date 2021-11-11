@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.flex-container {
+  background: rgb(239, 239, 192);
+  display: flex;
+  height: 60vh;
+  width: 30%;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  align-items: center;
+  gap: 6px;
+  margin: 25px;
+  border: 1px solid yellow;
+}
+div {
+  background: rgb(170, 154, 228);
+  width: 35px;
+}
+
+.flex-bar-one {
+  height: 100%;
+  margin-left: 5%;
+}
+.flex-bar-two {
+  height: 55%;
+}
+.flex-bar-three {
+  height: 60%;
+}
+.flex-bar-four {
+  height: 75%;
+}
+.flex-bar-five {
+  height: 25%;
+}
+.flex-bar-six {
+  height: 40%;
+}
