@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.circle {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  display: inline-block;
+  border-radius: 100px;
+  margin: 0 33px;
+  color: whitesmoke;
+  background: black;
+}
+
+div > p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div::before {
+  position: absolute;
+  content: "";
+  color: white;
+  width: 80px;
+  height: 80px;
+  top: 30%;
+  left: -40px;
+  background: black;
+  border-radius: 50%;
+}
+
+div::after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 80px;
+  top: 30%;
+  right: -40px;
+  background: black;
+  border-radius: 50%;
+}
+
+.dot-left {
+  top: 35%;
+  left: 0;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.dot-right {
+  top: 55%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: white;
+  font-size: 33px;
+  position: absolute;
+}

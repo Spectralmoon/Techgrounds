@@ -19,7 +19,6 @@
         color: white;
         display: block;
         position: relative;
-        /* margin: 50px; */
       }
       button::before {
         content: "";
@@ -46,17 +45,19 @@
         text-align: center;
         background-color: rgb(102, 216, 209);
         color: white;
+        font-weight: bolder;
         display: block;
         position: relative;
       }
       div::before {
         content: "";
-        height: 30px;
-        width: 10px;
+        height: 10px;
+        width: 50px;
         background-color: orange;
         bottom: 0;
         right: 0;
         position: absolute;
+        z-index: 1;
       }
       div::after {
         content: "";
