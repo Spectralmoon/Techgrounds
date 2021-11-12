@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 800px;
+  background-color: rgb(172, 163, 163);
+  color: #fff;
+  padding: 10px;
+  border: 3px solid grey;
+  /* margin: 5%; */
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background: rgb(249, 163, 177);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  transition-duration: 1s;
+}
+.box:hover {
+  transform: translate(670px);
+}
+
+.ease {
+  transition: 1.2s ease-in;
+  border-radius: 10%;
+}
+.ease-in {
+  transition: 1.2 ease-in;
+  border-radius: 10%;
+}
+.ease-out {
+  transition: 1.2 ease-out;
+}
+.ease-in-out {
+  transition: 1.2 ease-in-out;
+}
+.step-start {
+  transition: 1.2 step-start;
+}
