@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 3px solid grey;
+  height: 500px;
+  width: 500px;
+  background-color: #f6e4ed;
+  margin: 3% auto;
+}
+.funny-box {
+  width: 50%;
+  height: 50%;
+  border: 3x solid rgb(150, 90, 90);
+  background: rgb(225, 120, 120);
+  background: url("https://i.pinimg.com/564x/16/ca/b1/16cab153397fc070d5369635ba891e8d.jpg")
+    no-repeat center/contain;
+  position: relative;
+}
+
+.funny-box::before {
+  position: absolute;
+  font-size: 10 rem;
+  width: 100%;
+  height: 100%;
+  content: "Miauuuu";
+  color: white;
+  display: flex;
+  justify-content: center;
+  transform: skewX();
+  transition: all 4s;
+}
+.funny-box:hover::before {
+  margin-top: 300px;
+  transform: scale(2);
+}
+
+.funny-box::after {
+  content: "";
+  position: absolute;
+  background-color: #f8afa6;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform: rotate(0);
+  margin: 0;
+  transition: all 3s ease;
+}
+
+.funny-box:hover::after {
+  margin-left: 200px;
+  margin-top: 200px;
+  transform: rotate(50deg);
+  background-color: #847287;
+}

@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  position: relative;
+  border: 3px solid grey;
+  height: 50vh;
+  width: 60%;
+  background-color: #c5e0e4;
+  margin: 3% auto;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: 3px solid rgb(65, 108, 121);
+  background: cornflowerblue;
+}
+
+.box:not(:box-3) {
+  margin-bottom: 20px;
+}
+
+.box1 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  transition-property: top, right, transform;
+  transition-duration: 3s, 3s, 3s;
+  transition-delay: 0ms, 600ms, 300ms;
+  animation-timing-function: ease-in, linear, ease-out;
+}
+.main-container:hover .box1 {
+  top: 0%;
+  right: 0%;
+  transform: translate(0%, 0%);
+}
+
+.box2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: transform top, left;
+  transition-duration: 3s, 3s, 3s;
+  transition-delay: 0ms, 600ms, 300ms;
+  animation-timing-function: ease-in, linear, ease-out;
+}
+.main-container:hover .box2 {
+  top: 0%;
+  left: 0%;
+  transform: translate(0%, 0%);
+}
+
+.box3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: transform left, bottom;
+  transition-duration: 3s, 3s, 1s;
+  transition-delay: 0s, 3s, 2s;
+  animation-timing-function: ease-in, ease, ease-in-out;
+}
+.main-container:hover .box3 {
+  left: 25px;
+  top: 100%;
+  transform: translate(-50%, -80%);
+}

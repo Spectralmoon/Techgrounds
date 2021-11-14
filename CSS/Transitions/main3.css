@@ -29,19 +29,19 @@
 }
 
 .ease {
-  transition: 1.2s ease-in;
+  transition-timing-function: ease ease-in;
   border-radius: 10%;
 }
 .ease-in {
-  transition: 1.2 ease-in;
+  transition-timing-function: ease-in;
   border-radius: 10%;
 }
 .ease-out {
-  transition: 1.2 ease-out;
+  transition-timing-function: ease-out;
 }
 .ease-in-out {
-  transition: 1.2 ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 .step-start {
-  transition: 1.2 step-start;
+  transition-timing-function: linear;
 }
