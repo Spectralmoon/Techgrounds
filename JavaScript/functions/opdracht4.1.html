@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Functions</title>
+  </head>
+  <body>
+    <h3>opdracht 4.1</h3>
+
+    <button type="button" class="btn" onclick="Hello World();">Click me</button>
+    <!-- <input type="text"  id="Fname" onkeyup="nameReader()">
+<input type="text"  id="Number" onkeyup="nameReader()">
+ -->
+
+    <input type="checkbox" onchange="getChecked()" id="check1" />
+    <input type="text" id="text" placeholder="Enter text" onchange="getVal()" />
+
+    <script>
+      function getChecked() {
+        const checkBox = document.getElementById("check1").checked;
+        if (checkBox === true) {
+          console.log(true);
+        } else {
+          console.log(false);
+        }
+      }
+
+      //       //   A
+      //       const hi = (click) => {
+      //         console.log("Hello World");
+      //       };
+
+      //       //  let personName = document.getElementById('Fname');
+      //       //  let person = personName.value;
+
+      //       //  console.log(person);
+      //       // //  B
+      //       // console.log(document.getElementById('Fname').value);
+      //       // console.log(personName);
+
+      //       // let nameReader = (personName) => {
+      //       //     console.log(personName);
+      //       // }
+
+      //       // function nameReader(personName) {
+      //       //     console.log(document.getElementById('Fname').value);
+
+      //       // }
+      //       // C output cl same as typed in input
+
+      //  let val = document.getElementById('text').value;
+      // console.log(val);
+
+      //       function getVal() {
+      //   let val = document.getElementById('text').value;
+      //   console.log(`${val} is text value`);
+
+      // }
+
+      // // D
+
+      let number = 6;
+
+      let calculate = (number) => number * 2;
+      console.log(calculate(number));
+
+      // function calculate(number) {
+      //    return number * 2
+      // }
+
+      let result = calculate(number);
+      console.log("answer " + result);
+    </script>
+  </body>
+</html>

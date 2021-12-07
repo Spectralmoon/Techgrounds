@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Functions</title>
+  </head>
+  <body>
+    <h3>opdracht 4.4</h3>
+
+    <h4>A</h4>
+    <p>Guess our names</p>
+    <p class="message">Start guessing...</p>
+    <input
+      type="text"
+      id="typedName"
+      class="nameInput"
+      onblur="nameChecker()"
+    />
+
+    <p id="nameOutput"></p>
+
+    <script>
+         // const names = ['bianca','roibin','susana', 'miki'];
+         // let typedName = 'bianca';
+         // console.log(names);
+
+         // const nameChecker = (name) => {
+         //     if ('bianca' == name){
+         //         console.log('dag');
+         // }else {console.log('hi')}
+
+         // }
+
+         // nameChecker('susana');
+
+         const miki = "miki";
+         const susana = "susana";
+         const bianca = "bianca";
+         const roibin = "roibin";
+
+
+         const name = 'miki';
+
+         const nameChecker = () => {
+             const name = document.getElementById('typedName').value;
+             if (name == 'miki'){
+                 console.log(`my name is ${name}`)
+                 document.getElementById("nameOutput").innerHTML = `my name is ${name}`;
+             }else if (name == 'susana'){
+                 document.getElementById("nameOutput").innerHTML = `my name is ${name}`;
+                 console.log(`my name is ${name}`);
+             }else if (name == 'roibin'){
+                 document.getElementById("nameOutput").innerHTML = `my name is ${name}`;
+                 console.log(`my name is ${name}`);
+             }else if (name == 'bianca'){
+                 document.getElementById("nameOutput").innerHTML = `my name is ${name}`;
+                 console.log(`my name is ${name}`);
+             }else if (name == 'susana'){
+                 document.getElementById("nameOutput").innerHTML = `my name is ${name}`;
+                 console.log(`my name is ${name}`);
+
+             `)
+         }
+         }
+
+         const nameChecker = () => {
+             const name = document.getElementById('typedName').value;
+             if (name == 'susana'){
+                 console.log(`my name is ${name}`)
+                 document.getElementById("nameOutput").innerHTML = `my name is ${name}`;
+             }else if (name == 'bianca'){
+                 document.getElementById("nameOutput").innerHTML = `my name is ${name}`;
+                 console.log(`my name is ${name}`);
+             }else if (name == 'roibin'){
+                 document.getElementById("nameOutput").innerHTML = `my name is ${name}`;
+                 console.log(`my name is ${name}`);
+             }else if (name == 'roibin'){
+                 document.getElementById("nameOutput").innerHTML = `my name is ${name}`;
+                 console.log(`my name is ${name}`);
+             }else if (name == 'susana'){
+                 document.getElementById("nameOutput").innerHTML = `my name is ${name}`;
+                 console.log(`my name is ${name}`);
+             }else {document.getElementById("nameOutput").innerHTML = `my name is not ${name}`;
+                 console.log(`my name is not ${name}
+             `)
+         }
+       //   }
+       //   const displayMessage = function (message) {
+       //     document.querySelector(".message").textContent = message;
+       //   };
+
+       //   const nameChecker = () => {
+       //     const name = document.getElementById("typedName").value;
+       //     if (name == "wesley") {
+       //       console.log(`my name is ${name}`);
+       //       document.getElementById(
+       //         "nameOutput"
+       //       ).innerHTML = `my name is ${name}`;
+       //     } else if (name == "bianca") {
+       //       document.getElementById(
+       //         "nameOutput"
+       //       ).innerHTML = `my name is ${name}`;
+       //       console.log(`my name is ${name}`);
+       //     } else if (name == "janou") {
+       //       document.getElementById(
+       //         "nameOutput"
+       //       ).innerHTML = `my name is ${name}`;
+       //       console.log(`my name is ${name}`);
+       //     } else if (name == "roibin") {
+       //       document.getElementById(
+       //         "nameOutput"
+       //       ).innerHTML = `my name is ${name}`;
+       //       console.log(`my name is ${name}`);
+       //     } else if (name == "susana") {
+       //       document.getElementById(
+       //         "nameOutput"
+       //       ).innerHTML = `my name is ${name}`;
+       //       console.log(`my name is ${name}`);
+       //     } else {
+       //       document.getElementById(
+       //         "nameOutput"
+       //       ).innerHTML = `my name is not ${name}`;
+       //       console.log(`my name is not ${name}
+       // `);
+       //     }
+       //   };
+
+       const showText = () => {
+       document.getElementById("nameOutput").innerHTML = `my name is not ${name}`;
+      }
+
+      showText();
+    </script>
+  </body>
+</html>
