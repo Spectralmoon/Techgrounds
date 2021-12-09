@@ -37,7 +37,7 @@
 
     <!-- //make examples -->
 
-    <!-- <p class="agent1"></p>
+    <!-- <p class="case1"></p>
     
     <ul>
       <li>wop</li>
@@ -56,31 +56,28 @@
     <p id="demo"></p> -->
 
     <script>
-      //   A
+      const agent1 = document.getElementsByClassName(".agent1");
+      const listTag = document.getElementsByTagName("LI");
+      const agent3 = document.querySelector("agent3");
+      const agent4 = document.querySelectorAll("agent4");
+      // const agent5 = element.innerHTML("agent5");
+      // const agent6 = element.innerText("text-output");
 
-      //       const agent1 = document.getElementsByClassName(".agent1");
-      //       const listTag = document.getElementsByTagName("LI");
-      //       const agent3 = document.querySelector("agent3");
-      //       const agent4 = document.querySelectorAll("agent4");
-      //       // const agent5 = element.innerHTML("agent5");
-      //       // const agent6 = element.innerText("text-output");
+      function listLength() {
+        let x = document.getElementsByTagName("LI");
+        document.getElementsByClassName(".agent1").innerHTML = x.length;
+      }
 
-      //       function listLength() {
-      //   let x = document.getElementsByTagName("LI");
-      //   document.getElementsByClassName(".agent1").innerHTML = x.length;
-      // }
+      function colorChange() {
+        document.querySelector(".agent3").style.backgroundColor = "red";
+      }
 
-      //       function colorChange() {
-      //   document.querySelector(".agent3").style.backgroundColor = "red";
+      function myFunction() {
+        var x = document.getElementsByTagName("LI");
+        document.getElementById("demo").innerHTML = x.length;
+      }
 
-      //   }
-
-      //   function myFunction() {
-      //   var x = document.getElementsByTagName("LI");
-      //   document.getElementById("demo").innerHTML = x.length;
-      // }
-
-      // B
+      B;
       function textReader() {
         const x = document.getElementById("myInput").value;
         document.getElementById("output-text").innerHTML = "You wrote: " + x;

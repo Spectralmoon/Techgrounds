@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <h4>A</h4>
+    <button class="button">click me</button>
+    <p class="paragraph"></p>
+    <p>onclick you get ramdon numbers between 1 and 1000</p>
+
+    <h4>B</h4>
+    <p>The numbers become ramdom between the x value</p>
+
+    <h4>C</h4>
+
+    <p>Math.min returns lowest value</p>
+    <p>Math.max returns highest value</p>
+
+    <script>
+      const button = document.querySelector(".button");
+      console.log(button);
+
+      function getRandom() {
+        console.log(Math.floor(Math.random() * 1000) + 1);
+        return Math.floor(Math.random() * 1000) + 1;
+      }
+
+      button.addEventListener("click", randomNumber);
+      const randomNumber = () => {
+        console.log(x);
+        console.log(Math.floor(Math.random() * x));
+      };
+
+      c;
+      const randomNumber = () => {
+        console.log(Math.min(3, 1, 2));
+      };
+
+      const randomNumber = () => {
+        console.log(Math.max(3, 1, 2));
+      };
+
+      // een event vastmaken aan de knop die de functie getRandom() draait
+      // als je er op clicks
+    </script>
+  </body>
+</html>
