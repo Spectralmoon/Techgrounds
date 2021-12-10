@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +17,6 @@ body {
   background-color: #eec0c6;
   background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
 }
-
 header {
   display: grid;
   place-content: center;
@@ -38,18 +38,34 @@ header {
   text-decoration: none;
   font-weight: bold;
   text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #b7b7b7;
-  box-shadow: 2px 2px 0.5em rgba(98, 73, 122, 0.55), inset 1px 1px 0 rgba(255, 255, 255, 0.75), inset -1px -1px 0 rgba(0, 0, 0, 0.34);
+  box-shadow: 2px 2px 0.5em rgba(98, 73, 122, 0.55),
+    inset 1px 1px 0 rgba(255, 255, 255, 0.75),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.34);
   border: 1px solid #cacaca;
-  background: linear-gradient(-72deg, #dedede, #ffffff 16%, #dedede 21%, #ffffff 24%, #caa1de 27%, #dea1ca 30%, #dedede 38%, #ffffff 45%, #ffffff 60%, #dedede 72%, #ffffff 80%, #dedede 84%, #caa1de 93%, #dea1ca);
+  background: linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #caa1de 27%,
+    #dea1ca 30%,
+    #dedede 38%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #caa1de 93%,
+    #dea1ca
+  );
 }
-
 button {
   cursor: pointer;
   padding: 1em;
   border-radius: 50%;
   transition: all 0.6s ease-in-out;
 }
-
 h2 {
   margin-top: 2em;
 }
@@ -63,13 +79,15 @@ h2 {
   background-color: transparent;
   transition: all 0.4s ease-in-out;
   font-weight: 900;
+  //
   background-color: #1e1e1e;
   color: white;
-}
-.btn-cat:hover {
-  -webkit-text-stroke: 1px #111;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: #fff;
+
+  &:hover {
+    -webkit-text-stroke: 1px #111;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #fff;
+  }
 }
 
 .modalContainer {
@@ -82,7 +100,6 @@ h2 {
   place-content: center;
   margin: 0 auto;
 }
-
 .cat-modal {
   display: grid;
   position: absolute;
@@ -93,6 +110,7 @@ h2 {
   border: 1px solid #cecece;
   background-color: #eec0c6;
   background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+
   color: white;
   text-align: center;
   margin: 0 auto;
@@ -111,15 +129,17 @@ h2 {
   background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 84%);
   border: 1px solid #cecece;
   text-align: center;
-}
-.close-button:hover {
-  cursor: pointer;
-  color: #1e1e1e;
-  border: 1px solid black;
+
+  &:hover {
+    cursor: pointer;
+    color: #1e1e1e;
+    border: 1px solid black;
+  }
 }
 
 .headline {
   position: relative;
+
   font-size: 2em;
 }
 
