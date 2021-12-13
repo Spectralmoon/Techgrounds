@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <h1>Objects</h1>
+    <script>
+      // let pet = new Object();
+
+      // pet.name = "Tsuki";
+      // pet.age = "6";
+      // pet.species = "Cat";
+      // pet.country = "Netherlands";
+      // pet.city = "Hilversum";
+
+      // console.log(pet.name);
+      // console.log(pet.age);
+      // console.log(pet.species);
+      // console.log(pet.city);
+      // console.log(pet.country);
+      // console.log(pet);
+
+      // const Tsuki = Object.create(pet);
+      // console.log(Tsuki.age);
+
+      // const Tsuki = {
+      //   name: "Tsuki",
+      //   species: "Cat",
+      //   age: "6",
+      //   country: "Netherlands",
+      //   city: "Hilversum",
+      // };
+
+      // const Tashi = {
+      //   name: "Tashi",
+      //   species: "Dog",
+      //   age: "4",
+      //   country: "Netherlands",
+      //   city: "Hilversum",
+      // };
+
+      // const Dog = Object.create(Tashi);
+      // console.log(Dog.age);
+      // console.log(Dog);
+
+      //   const Person = {
+      //     name: 'Bastiaan',
+      //     age: "41",
+      //     country: "Netherlands",
+      //     city: "Amsterdam",
+
+      //   }
+
+      const circle = {
+        radius: 1,
+        location: {
+          x: 1,
+          y: 1,
+        },
+        isVisible: true,
+        draw: function () {
+          console.log("draw");
+        },
+      };
+      circle.draw; //Method if a function is part of an objact
+
+      // const Person = function (firstName, birthYear){
+      //       this.firstName = firstName;
+      //       this.birthYear = birthYear;
+
+      // }
+
+      // const Roibin = new Person('Roibin', 1981)
+      // const Alex = new Person('Alex', 1983)
+      // const Erica = new Person('Erica', 1971)
+      // const Kim = new Person('Kim', 1950)
+      // const Tim = new Person('Tim', 1976)
+
+      // console.log(Roibin);
+      // console.log(Alex);
+
+      // const personArray = [Roibin,Alex,Erica,Kim,Tim]
+      // console.log(personArray[0].firstName);
+
+      // const sortYear = function (){
+
+      // }
+
+      //  const sortDate = Roibin.birthYear;
+
+      //   console.log(sortDate);
+
+      const Persons = [
+        { name: "Bart", age: 15 },
+        { name: "Rachelle", age: 20 },
+        { name: "Caro", age: 25 },
+        { name: "Eve", age: 12 },
+        { name: "Arnoud", age: 22 },
+      ];
+
+      // const foundPerson = Persons.find(person) => {
+      //   return person.
+      // }
+
+      const filteredPersons = Persons.filter((person) => {
+        return person.age <= 20;
+      });
+
+      const agePersons = Persons.map((person) => {
+        return person.age;
+      });
+
+      console.log(filteredPersons);
+      console.log(agePersons);
+
+      agePersons.sort();
+      console.log(agePersons);
+    </script>
+  </body>
+</html>
