@@ -10,6 +10,7 @@ button.addEventListener("click", (event) => {
   event.preventDefault();
   for (let input of inputData) {
     console.log(input.name);
+
     switch (input.name) {
       case "naam":
         console.log(input.value);
@@ -25,13 +26,28 @@ button.addEventListener("click", (event) => {
         adresVeld.innerHTML = adresVeld.innerHTML + " " + input.value;
         break;
       case "postcode":
-        adresVeld.innerHTML = adresVeld.innerHTML + " " + input.value;
+        adresVeld.innerHTML = adresVeld.innerHTML + input.value;
         break;
       case "stad":
         adresVeldinnerHTML = adresVeld.innerH + " " + input.value;
         break;
       case "email":
         emailVeld.innerHTML = input.value;
+        // alert("Foute email");
+        console.log("input.value");
+        const email = emailVeld.innerHTML;
+        console.log(email);
+        const splitEmail = email.split("@")[1].split(".")[0].toLowerCase();
+        if (splitEmail !== "techgrounds") {
+          alert(
+            `${splitEmail} is not a correct email please login with @techgounds.nl`
+          );
+        }
+        console.log(splitEmail);
+
+        break;
+      default:
+        console.log("Not a valid entry!");
     }
   }
 });
