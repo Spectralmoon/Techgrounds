@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="form.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+
+    <form action="page_submission_URL" method="post">
+    <div class="container">
+      <div class="form">
+        <label>Naam:</label>
+        <input name="naam" placeholder= "Naam" required />
+      
+        <label>Telefoon:</label>
+        <input name="telf" placeholder=" Tel nummer" required />
+
+        <label>Straatnaam:</label>
+        <input name="straat" placeholder=" Street name" required />
+
+        <label>Huisnummer:</label>
+        <input name="nummer" placeholder="Huisnummer " required />
+
+        <label>Postcode:</label>
+        <input name="postcode" placeholder="Postcode" required />
+       
+        <label>Stad:</label>
+        <input name="stad" placeholder="Stad" required />
+
+        <label>Email:</label>
+        <input name="email"placeholder="Email" required>
+
+        <input type="button" value="Send" class="button" />
+      </div>
+    </form>
+
+      <div class="card">
+        <div class="image-container"></div>
+        <div>
+          <p>Naam:</p>
+          <p class="displayNaam"></p>
+        </div>
+        <div>
+          <p>Telefoon:</p>
+          <p class="displayTel"></p>
+        </div>
+        <div>
+          <p>Adres:</p>
+          <p class="displayStraat"></p>
+        </div>
+        <div>
+          <p>Email:</p>
+          <p class="displayEmail"></p>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
